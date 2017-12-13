@@ -82,8 +82,8 @@ const sketch = (p) => {
     }
 
     function nextCell(cell, grid) {
-        const dx = [-1, -1, -1,  0,  0, 0,  1,  1,  1];
-        const dy = [-1,  0,  1, -1,  0, 1, -1,  0,  1];
+        const dx = [-1, -1, -1,  0,  0,  0,  1,  1,  1];
+        const dy = [-1,  0,  1, -1,  0,  1, -1,  0,  1];
         const getX = i => (cell.indexX + dx[i] + CELL_NUM_X) % CELL_NUM_X;
         const getY = i => (cell.indexY + dy[i] + CELL_NUM_Y) % CELL_NUM_Y;
         const cnt = iota(9).map(
