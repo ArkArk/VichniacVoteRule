@@ -71418,8 +71418,9 @@ var p5 = require("p5");
 
 var sketch = function sketch(p) {
 
-    var CANVAS_WIDTH = 600;
-    var CANVAS_HEIGHT = 600;
+    var CANVAS_WIDTH = Math.min(window.innerWidth, window.innerHeight, 600);
+    var CANVAS_HEIGHT = Math.min(window.innerWidth, window.innerHeight, 600);
+
     var CELL_NUM_X = 50;
     var CELL_NUM_Y = 50;
     var CELL_WIDTH = CANVAS_WIDTH / CELL_NUM_X;

@@ -4,8 +4,9 @@ const p5 = require("p5");
 
 const sketch = (p) => {
 
-    const CANVAS_WIDTH  = 600;
-    const CANVAS_HEIGHT = 600;
+    const CANVAS_WIDTH  = Math.min(window.innerWidth, window.innerHeight, 600);
+    const CANVAS_HEIGHT = Math.min(window.innerWidth, window.innerHeight, 600);
+
     const CELL_NUM_X    = 50;
     const CELL_NUM_Y    = 50;
     const CELL_WIDTH    = CANVAS_WIDTH/CELL_NUM_X;
