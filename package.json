@@ -13,9 +13,9 @@
   "license": "MIT",
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
-    "babelify": "^7.2.0",
-    "browserify": "^13.0.0",
-    "budo": "^8.1.0",
-    "p5": "^0.5.16"
+    "babelify": "^10.0.0",
+    "browserify": "^16.3.0",
+    "budo": "^11.6.2",
+    "p5": "^0.9.0"
   }
 }
